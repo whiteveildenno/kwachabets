@@ -3,3 +3,9 @@
 
 2.	background: rgb(234,240,249);
 	background: linear-gradient(90deg, rgba(234,240,249,1) 0%, rgba(234,240,250,1) 14%, rgba(233,240,249,1) 26%, rgba(233,239,249,1) 40%, rgba(232,239,249,1) 49%, rgba(230,238,249,1) 58%, rgba(227,235,248,1) 69%, rgba(226,235,248,1) 79%, rgba(224,233,247,1) 88%, rgba(222,232,247,1) 100%);
+
+attribution:
+<a href='https://www.freepik.com/vectors/computer'>Computer vector created by vectorjuice - www.freepik.com</a>
+<a href='https://www.freepik.com/vectors/abstract'>Abstract vector created by starline - www.freepik.com</a>
+<a href='https://www.freepik.com/photos/background'>Background photo created by jcomp - www.freepik.com</a>
+<a href='https://www.freepik.com/vectors/background'>Background vector created by starline - www.freepik.com</a>
