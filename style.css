@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root {
   --primary-color: rgb(9,44,98);
   --secondary-color: rgb(234,240,249);
@@ -28,6 +28,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+hr {
+  background: var(--link-color);
 }
 
 .container {
@@ -82,12 +86,16 @@ ul {
 
 .headerline {
   background: var(--light-color);
-  width: 10rem;
-  height: .4rem;
+  width: 12rem;
+  height: .2rem;
 }
 
 .bookman {
   width: 55px;
+}
+
+.sport-img {
+  width: 690px;
 }
 
 .btn-large {
@@ -121,6 +129,20 @@ summary {
   color: #061244;
   background: var(--linear-gradient);
   border-color: #B2F6FD; 
+}
+
+.footer-img {
+  width:170px
+}
+
+.footer-aware {
+  width: 130px;
+  height: 30px;
+}
+
+.footer-img-ad {
+  width: 600px;
+  margin-bottom: 1rem;
 }
 
 
@@ -189,21 +211,14 @@ summary {
   background:url('images/background.jpg') no-repeat center center/cover;
   /* background: var(--linear-gradient); */
   height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
-#showcase .container .sport-img {
-  width: 720px;
-  position: absolute;
-  top: 30vh;
-  left: 18vh;
+  overflow-x: hidden;
 }
 
 #showcase .container .showcase-items {
-  position: absolute;
-  top: 37vh;
-  left: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 110vh;
 }
 
 #showcase .container .showcase-items .caption h1{
@@ -329,16 +344,34 @@ summary {
 
 /* ------ Why us section ----- */
 #why-us {
-  background: var(--linear-footer-gradient);
+  background: url("images/background2.jpg")no-repeat center center/cover;
   color: var(--light-color);
   font-size: .9rem;
+}
+
+#why-us .container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#why-us .container .title h2{
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--link-color);
+}
+
+#why-us .container .notification p {
+  color: var(--link-color);
+  text-align: center;
 }
 
 #why-us .container .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 1.7rem;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -353,6 +386,318 @@ summary {
   color: var(--link-color);
 }
 
+/* ---- Main Footer ----- */
+#main-footer {
+  background: #061244;
+  color: #fff;
+}
+
+#main-footer .container .footer-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .5rem;
+}
+
+#main-footer .container .footer-items .follow-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#main-footer .container .footer-items .follow-us p {
+  font-size: .8rem;
+}
+
+#main-footer .container .footer-items .about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 2rem;
+}
+
+#main-footer .container .footer-items .about-us a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: .5rem;
+  font-size: .8rem;
+}
+
+#main-footer .container .footer-items .footer-ad {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#main-footer .copyright {
+  text-align: center;
+  font-size: .8rem;
+}
+
+
+
+/* ======================================================================= */
+/* ======================================================================= */
+/* ======================================================================= */
+
+/* ----- Media Queris ---- */
+/* @media(min-width:2450px) {
+
+  :root {
+    --max-width: 2000px;
+  }
+
+  .btn-large { 
+    font-size: 1.7rem; 
+  }
+
+  .footer-img {
+    width:370px
+  }
+
+  .footer-aware {
+    width: 200px;
+    height: 50px;
+  }
+
+
+  #site-header .container .top-bar .note {
+    font-size: 1.2rem;
+  }
+
+  #navbar .container .nav-items .logo {
+    width: 350px;
+  }
+
+  #navbar .container .nav-items .listing li a{
+    font-size: 2rem;  
+  }
+
+  #showcase .container .sport-img {
+    width: 1100px;
+  }
+
+  #showcase .container .showcase-items {
+    left: 105vh;
+  }
+
+  #showcase .container .showcase-items .caption h1{
+    font-size: 4.5rem;
+  }
+
+  #showcase .container .showcase-items .caption h3{
+    font-size: 1.7rem;
+  }
+
+  #showcase .container .showcase-items .icons .fas{
+    font-size: 3rem; 
+  }
+
+  #tips .container .tips-wrapper .main-content .title h2 {
+    font-size: 3rem
+  }
+
+  #tips .container .tips-wrapper .main-content .title .fab {
+    font-size: 3rem;
+    padding-left: 1rem;
+  }
+
+  #tips .container .tips-wrapper .main-content .title .small {
+    font-size: 1.5rem;
+  }
+
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .top .league,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .top .date,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .kickoff,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .teams,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .choice,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .bottom .bet-now,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .accordion .bet-now {
+    color: #061244;
+    font-size: 1.5rem;
+  }
+
+  #why-us .container .title h2{
+    font-size: 4rem;
+  }
+
+  #why-us .container .notification p {
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+
+  #why-us .container .card-wrapper .carded .step {
+    font-size: 1.2rem;
+  }
+
+  #why-us .container .card-wrapper .carded .desc {
+    font-size: 5rem;
+  }
+
+
+  #why-us .container .card-wrapper .carded p {
+  font-size: 1.7rem;
+  }
+
+  #main-footer .container .footer-items .follow-us p {
+    font-size: 1.5rem;
+  }
+
+  #main-footer .container .footer-items .about-us h4{
+    font-size: 4rem;
+  }
+
+  #main-footer .container .footer-items .about-us a {
+    font-size: 1.6rem;
+  }
+
+  #main-footer .copyright {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width:2449px) and (min-width:1920px){
+  #showcase .container .sport-img {
+    width: 700px;
+  }
+
+  #showcase .container .showcase-items {
+    left: 105vh;
+  }
+
+} */
+
+@media(max-width:1919px) and (min-width:1600px){
+}
+
+@media(max-width:768px) and (min-width:577px){
+}
+
+@media(max-width: 576px) and (min-width: 373px) {
+
+  .sport-img {
+    width: 200px;
+  }
+
+  .btn-large {
+    font-size: .7rem;
+  }
+
+  .headerline {
+    background: var(--light-color);
+    width: 12rem;
+    height: .2rem;
+  }
+
+  #site-header .container .top-bar {
+    padding: .2 0;
+  }
+
+  #site-header .container .top-bar .note {
+    font-size: .5rem;
+  }
+  
+  #navbar .container .nav-items {
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
+  }
+
+  #navbar .container .nav-items .logo {
+    width: 100px;
+    padding: .2rem 0;
+  }
+
+  #navbar .container .nav-items .listing li a{
+    font-size: .8rem;
+  }
+
+  #showcase {
+    background:url('images/background.jpg') no-repeat center center/cover;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  #showcase .container .showcase-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    height: 90vh;
+  }
+
+  #showcase .container .showcase-items .caption h1{ 
+    font-size: 1.1rem;
+  }
+
+  #showcase .container .showcase-items .caption h3{
+    font-size: .7rem;
+  }
+
+  
+  #showcase .container .showcase-items .icons .fas{
+    font-size: 1.5rem;
+  }
+
+  #tips .tips-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #tips .tips-wrapper .left-add,
+  #tips .tips-wrapper .right-add,
+  #tips .container .tips-wrapper .main-content .main-ad {
+    display: none;
+  }
+
+  #tips .container .tips-wrapper .main-content .title h2 {
+    font-size: 1.4rem;
+  }
+
+  #tips .container .tips-wrapper .main-content .title .fab {
+    font-size: 1.4rem;
+    padding-left: .3rem;
+  }
+
+  #tips .container .tips-wrapper .main-content .title .small {
+    font-size: .5rem;
+  }
+
+  #tips .container .tips-wrapper .main-content .article-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .top {
+    margin-bottom: 0;    
+  }
+  
+
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .top .league,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .top .date,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .kickoff,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .teams,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .choice,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .bottom .bet-now,
+  #tips .container .tips-wrapper .main-content .article-wrapper .post .accordion .bet-now {
+    font-size: .6rem;
+    color: #061244;
+    font-weight: 500;
+  }
+
+  #why-us .container .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  #main-footer .container .footer-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+  }
+
+}
+
+@media(max-width:372px)
+{
+
+}
 
 
 

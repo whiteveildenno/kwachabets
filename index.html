@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwacha Bets</title>
-  <link rel="shortcut icon" href="">
+  <link rel="shortcut icon" href="#empty">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Assets/bootstrap-4.3.1-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="Assets/fontawesome-free-5.13.0-web/css/all.css">
   <link rel="stylesheet" href="style.css">
@@ -29,7 +31,7 @@
       <div class="nav-items">
         <a href="#home"><img class="logo" src="images/Kwachalogo.png" alt="Kwacha Bets"></a>
         <ul class="listing">
-          <li><a href="#tips">Tips</a></li>
+          <li><a href="index.html">Tips</a></li>
           <li><a href="#bookie">Bookmakers</a></li>
           <li><a href="#history">Bet History</a></li>
         </ul>
@@ -39,23 +41,23 @@
 
   <!-- Showcase Section -->
   <section id="showcase">
-    <div class="container">
-      <div>
-        <img class="sport-img" src="images/number1.png" alt="numberone">
-      </div>
+    <div class="container">      
       <div class="showcase-items">
+        <div>
+          <img class="sport-img" src="images/number1.png" alt="numberone">
+        </div>
         <div class="caption">
           <h1>Bigger Rewards</h1>
           <div class="headerline"></div>
           <H3>Welcome to the Worlds largest free bet<br>marketplace. We offer a wide selection of<br>professionally
             analyzed betting tips.</H3>
           <a class="btn-large" href="#telegram"><span><i class="fab fa-telegram"></i></span> Join KwachaBets</a>
-        </div>
-        <div class="icons">
-          <i class="fas fa-trophy"></i>
-          <i class="fas fa-award"></i>
-          <i class="fas fa-medal"></i>
-        </div>
+          <div class="icons">
+            <i class="fas fa-trophy"></i>
+            <i class="fas fa-award"></i>
+            <i class="fas fa-medal"></i>
+          </div>
+        </div>        
       </div>
     </div>
   </section>
@@ -75,7 +77,7 @@
           <div class="article-wrapper">
             <article class="post">
               <div class="top">
-                <span class="league">Country | Competition</span>
+                <h6 class="league"><span>Country | Competition</span></h6>
                 <span class="date">Jan 1st 2021</span>
               </div>
               <hr>
@@ -493,6 +495,27 @@
   <!--start why us section -->
   <section id="why-us" class="py-5">
     <div class="container">
+      <div class="title">
+        <h2>Why us?</h2>
+        <div class="headerline"></div>
+      </div>
+      <div class="card-wrapper my-5">
+        <div class="carded">
+          <h6 class="step">01.</h6>
+          <h4 class="desc">Analyze</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
+        </div>
+        <div class="carded">
+          <h6 class="step">02.</h6>
+          <h4 class="desc">Predict</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
+        </div>
+        <div class="carded">
+          <h6 class="step">03.</h6>
+          <h4 class="desc">Win</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
+        </div>
+      </div>
       <div class="notification">
         <p>
           KwachaBets is a free betting tip marketplace. We have a number of analyzed football bets aimed to help punters
@@ -503,25 +526,39 @@
           for user reviews).<br><br> Gambling should be fun, let us help you enjoy it.
         </p>
       </div>
-      <div class="card-wrapper my-5">
-        <div class="carded">
-          <h6 class="step">01</h6>
-          <h4 class="desc">Analyze</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
-        </div>
-        <div class="carded">
-          <h6 class="step">02</h6>
-          <h4 class="desc">Predict</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
-        </div>
-        <div class="carded">
-          <h6 class="step">03</h6>
-          <h4 class="desc">Win</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
-        </div>
-      </div>
     </div>
   </section>
+
+  <!-- Main footer -->
+  <footer id="main-footer" class="py-5">
+    <div class="container">
+      <div class="footer-items">
+        <div class="follow-us">
+          <img class="footer-img" src="images/Kwachalogo.png" alt="KwachaBets">
+          <p class="my-3">You must be 18+ years old to use this website. Please bet responsibly.</p>
+          <div>
+            <img class="footer-aware my-1 mx-1" src="images/play-responsibly.png" alt="bet responsibly">
+            <img class="footer-aware" src="images/Gambleaware-Logo-UK.jpg" alt="begambleaware">
+          </div>
+        </div>
+        <div class="about-us">
+          <h4>About Us</h4>
+          <a href="#responsible">Responsible Gambling</a>
+          <a href="#advertise">Advertise With Us</a>
+          <a href="#Terms&Conditions">Terms & Conditions</a>
+          <a href="#privacypolicy">Privacy Policy</a>
+        </div>
+        <!-- <div class="footer-ad">
+          <img class="footer-img-ad" src="images/ad-large.jpg" alt="">
+          <img class="footer-img-ad" src="images/ad-large.jpg" alt="">
+        </div> -->
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="copyright">Copyright &copy; 2021. KwachaBets. All Rights Reserved</p>
+    </div>
+  </footer>
 
   <!--- Top Scroll -->
   <!-- <a href="#home" class="top-scroll">
