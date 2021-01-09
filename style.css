@@ -567,13 +567,13 @@ summary {
 
 } */
 
-@media(max-width:1919px) and (min-width:1600px){
+/* @media(max-width:1919px) and (min-width:1600px){
 }
 
 @media(max-width:768px) and (min-width:577px){
-}
+} */
 
-@media(max-width: 576px) and (min-width: 373px) {
+@media(max-width: 768px) and (min-width: 373px) {
 
   .sport-img {
     width: 200px;
