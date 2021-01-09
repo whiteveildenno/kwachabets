@@ -573,7 +573,7 @@ summary {
 @media(max-width:768px) and (min-width:577px){
 } */
 
-@media(max-width: 768px) and (min-width: 373px) {
+@media(max-width: 768px) {
 
   .sport-img {
     width: 200px;
@@ -694,10 +694,10 @@ summary {
 
 }
 
-@media(max-width:372px)
+/* @media(max-width:372px)
 {
 
-}
+} */
 
 
 
