@@ -630,14 +630,14 @@ summary {
   }
 
   #showcase {
-    height: 55vh;
+    height: 60vh;
   }
 
   #showcase .showcase-items {
     display: flex;
     flex-direction: column;
     align-content: center;
-    height: 55vh;
+    height: 60vh;
     width: 100vw;
   }
 
