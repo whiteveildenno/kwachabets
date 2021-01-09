@@ -94,8 +94,8 @@ hr {
   width: 55px;
 }
 
-.sport-img {
-  width: 690px;
+.ball {
+  width: 550px;
 }
 
 .btn-large {
@@ -149,7 +149,7 @@ summary {
 /* ----- Component Styling -------- */
 #site-header {
   background: var(--linear-gradient);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -171,7 +171,7 @@ summary {
 /* ----- Navigation Bar ----- */
 #navbar{
   background: #061244;
-  position: fixed;
+  position:sticky;
   top: 1.8rem;
   left: 0;
   right: 0;
@@ -207,28 +207,45 @@ summary {
 }
 
 /* ----- Showcase section ----- */
+
 #showcase {
-  background:url('images/background.jpg') no-repeat center center/cover;
-  /* background: var(--linear-gradient); */
-  height: 100vh;
-  overflow-x: hidden;
+  height: 90vh;
 }
-
-#showcase .container .showcase-items {
+#showcase .showcase-items {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 110vh;
+  align-content: center;
+  height: 90vh;
+  width: 100vw;
 }
 
-#showcase .container .showcase-items .caption h1{
+#showcase .showcase-items .sports-img {
+  background: #EAF0FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 2rem;
+  width: 50vw;
+}
+
+#showcase .showcase-items .caption {
+  background: #061244;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  padding-left: 2rem;
+  width: 50vw;
+}
+
+#showcase .showcase-items .caption h1{
   color: var(--light-color);  
   font-size: 2.9rem;
   text-transform: uppercase;
   margin-bottom: .5rem;
 }
 
-#showcase .container .showcase-items .caption h3{
+#showcase .showcase-items .caption h3{
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: var(--light-color);
@@ -236,7 +253,7 @@ summary {
   font-size: 1.3rem;
 }
 
-#showcase .container .showcase-items .icons .fas{
+#showcase .showcase-items .icons .fas{
   margin-top: 1.5rem;
   margin-right: 1.3rem;
   margin-left: .5rem;
@@ -575,7 +592,7 @@ summary {
 
 @media(max-width: 768px) {
 
-  .sport-img {
+  .ball {
     width: 200px;
   }
 
@@ -585,7 +602,7 @@ summary {
 
   .headerline {
     background: var(--light-color);
-    width: 12rem;
+    width: 5rem;
     height: .2rem;
   }
 
@@ -613,37 +630,55 @@ summary {
   }
 
   #showcase {
-    background:url('images/background.jpg') no-repeat center center/cover;
-    height: 90vh;
-    overflow: hidden;
+    height: 52vh;
   }
 
-  #showcase .container .showcase-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    height: 90vh;
+  #showcase .showcase-items {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 52vh;
+    width: 100vw;
   }
 
-  #showcase .container .showcase-items .caption h1{ 
-    font-size: 1.1rem;
+  #showcase .showcase-items .sports-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100vw;
   }
 
-  #showcase .container .showcase-items .caption h3{
+  #showcase .showcase-items .caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    width: 100vw;
+  }
+
+  #showcase .showcase-items .caption h1{ 
+    font-size: 1.4rem;
+  }
+
+  #showcase .showcase-items .caption h3{
     font-size: .7rem;
+    text-align: center;
   }
-
   
-  #showcase .container .showcase-items .icons .fas{
+  #showcase .showcase-items .icons .fas{
     font-size: 1.5rem;
   }
 
-  #tips .tips-wrapper {
+  #tips .container .tips-wrapper {
+    display: grid;
     grid-template-columns: 1fr;
   }
 
-  #tips .tips-wrapper .left-add,
-  #tips .tips-wrapper .right-add,
+  #tips .container .tips-wrapper .left-add,
+  #tips .container .tips-wrapper .right-add,
   #tips .container .tips-wrapper .main-content .main-ad {
     display: none;
   }
