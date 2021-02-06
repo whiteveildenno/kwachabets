@@ -221,6 +221,7 @@ summary {
 
 #showcase {
   height: 90vh;
+  overflow-x: hidden;
 }
 #showcase .showcase-items {
   display: flex;
