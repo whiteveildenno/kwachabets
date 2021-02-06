@@ -104,7 +104,7 @@
   
 }
 
-@media(max-width:639px) and (min-width:577px){
+@media(max-width:639px){
   #bookmaker .container .bookie-wrapper {
     grid-template-columns:1fr;
   }
@@ -138,9 +138,6 @@
   }
 }
 
-@media(max-width: 576px) {
-
-}
 
 
 
