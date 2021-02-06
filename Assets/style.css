@@ -18,6 +18,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 /*------ Utility Components -----*/
@@ -141,6 +142,7 @@ summary {
 }
 
 .footer-img-ad {
+  display: block;
   width: 600px;
   margin-bottom: 1rem;
 }
@@ -361,6 +363,11 @@ summary {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#tips .container .tips-wrapper .main-content .main-ad img {
+  display: block;
+  width: 100%;
 }
 
 /* ------ Why us section ----- */
@@ -644,8 +651,7 @@ summary {
   }
 
   #tips .container .tips-wrapper .left-add,
-  #tips .container .tips-wrapper .right-add,
-  #tips .container .tips-wrapper .main-content .main-ad {
+  #tips .container .tips-wrapper .right-add {
     display: none;
   }
 
@@ -710,140 +716,7 @@ summary {
 
 }
 
-@media(max-width:639px) and (min-width:577px){
-  .ball {
-    width: 350px;
-  }
-
-  .btn-large {
-    font-size: .9rem;
-  }
-
-  .footer-img {
-    width:120px
-  }
-
-  .footer-aware {
-    width: 70px;
-    height: 20px;
-  }
-
-  .footer-img-ad {
-    width: 300px;
-    margin-bottom: 1rem;
-  }
-  
-  #main-footer .copyright {
-    text-align: center;
-    font-size: .7rem;
-  }
-
-  #navbar .container .nav-items {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-  }
-
-  #navbar .container .nav-items .logo {
-    width: 150px;
-    padding: .2rem 0;
-  }
-
-  #navbar .container .nav-items .listing li a{
-    font-size: .9rem;
-  }
-
-  #showcase {
-    height: 60vh;
-  }
-
-  #showcase .showcase-items {
-    height: 60vh;
-    width: 100vw;
-  }
-
-  #showcase .showcase-items .caption h1{ 
-    font-size: 2rem;
-  }
-
-  #showcase .showcase-items .caption h3{
-    font-size: 1rem;
-  }
-
-  #showcase .showcase-items .icons .fas{
-    font-size: 2rem;
-  }
-
-  #tips .container .tips-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  #tips .container .tips-wrapper .left-add,
-  #tips .container .tips-wrapper .right-add,
-  #tips .container .tips-wrapper .main-content .main-ad {
-    display: none;
-  }
-
-  #tips .container .tips-wrapper .main-content .title h2 {
-    font-size: 1.4rem;
-  }
-
-  #tips .container .tips-wrapper .main-content .title .fab {
-    font-size: 1.4rem;
-    padding-left: .3rem;
-  }
-
-  #tips .container .tips-wrapper .main-content .article-wrapper .post .top .league,
-  #tips .container .tips-wrapper .main-content .article-wrapper .post .top .date,
-  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .kickoff,
-  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .teams,
-  #tips .container .tips-wrapper .main-content .article-wrapper .post .middle .choice,
-  #tips .container .tips-wrapper .main-content .article-wrapper .post .bottom .bet-now,
-  #tips .container .tips-wrapper .main-content .article-wrapper .post .accordion .bet-now {
-    font-size: .6rem;
-    color: #061244;
-    font-weight: 500;
-  }
-
-  #why-us .container .title h2{
-    font-size: 2rem;
-    letter-spacing: 2px;
-  }
-
-  #why-us .container .card-wrapper .carded .step {
-    font-size: .8rem;
-  }
-
-  #why-us .container .card-wrapper .carded .desc {
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding-left: 1rem;
-    color: var(--link-color);
-  }
-
-  #why-us .container .card-wrapper .carded p {
-    font-size: .7rem;
-  }
-
-  #why-us .container .notification p{
-    font-size: .7rem;
-    padding: 0 .5rem;
-  }
-
-  #main-footer .container .footer-items .follow-us {
-    padding: 0 .5rem;
-  }
-
-  #main-footer .container .footer-items .follow-us p {
-    font-size: .7rem;
-
-  }
-
-
-} 
-
-@media(max-width: 576px) {
+@media(max-width: 639px) {
 
   .ball {
     width: 200px;
@@ -948,8 +821,8 @@ summary {
   }
 
   #tips .container .tips-wrapper .left-add,
-  #tips .container .tips-wrapper .right-add,
-  #tips .container .tips-wrapper .main-content .main-ad {
+  #tips .container .tips-wrapper .right-add
+ {
     display: none;
   }
 
