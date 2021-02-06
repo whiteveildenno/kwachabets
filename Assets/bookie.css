@@ -30,7 +30,7 @@
   margin: 1rem;
   padding: 1rem;
   background: var(--linear-footer-gradient);
-  border-radius:  1rem;
+  border-radius:  .3rem;
   color: var(--light-color);
 }
 
