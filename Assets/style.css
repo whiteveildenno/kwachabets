@@ -43,6 +43,10 @@ hr {
   margin-left:auto
 }
 
+.current{
+  color: var(--light-color);
+}
+
 .p-0 {padding: 0.75rem;}
 .p-1 {padding: 1.5rem;}
 .p-2 {padding: 2rem}
