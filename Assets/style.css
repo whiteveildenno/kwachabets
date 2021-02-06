@@ -377,7 +377,6 @@ summary {
 
 /* ------ Why us section ----- */
 #why-us {
-  background: url("images/background2.jpg")no-repeat center center/cover;
   color: var(--light-color);
   font-size: .9rem;
 }
