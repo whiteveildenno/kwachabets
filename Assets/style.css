@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
@@ -465,6 +469,28 @@ summary {
   font-size: .8rem;
 }
 
+/*============= TOP SCROLL =============*/
+
+.top-scroll .fa-donate {
+  font-size: 2rem;
+  padding: .5rem;
+  color: transparent;
+  -webkit-text-stroke-width: .8px;
+  -webkit-text-stroke-color: var(--link-color);
+  background-color: #061244;
+  border-radius: 50%;
+}
+a.top-scroll {
+  left: 1.3rem;
+  bottom: 1.2rem;
+  position: fixed;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: .5;
+}
+
 
 
 /* ======================================================================= */
@@ -716,7 +742,11 @@ summary {
   #main-footer .container .footer-items .follow-us p {
     font-size: .5rem;
   }
-  
+
+  .top-scroll .fa-donate {
+    font-size: 1.9rem;
+    padding: .5rem;
+  }
 
 }
 
@@ -924,6 +954,11 @@ summary {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
+
+  .top-scroll .fa-donate {
+    font-size: 1.9rem;
+    padding: .5rem;
   }
 
 }
