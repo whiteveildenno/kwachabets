@@ -14,6 +14,7 @@
 #bookmaker .container .bookie-wrapper .bonus-content .title {
   border-radius: .4rem;
   border: 1px solid #061244 ;
+  padding: 1rem .2rem;
 }
 
 #bookmaker .container .bookie-wrapper .bonus-content .title h1 {
@@ -41,6 +42,7 @@
 
 .bookie-name .fas {
   color: var(--light-color);
+  margin-bottom: .4rem;
 }
 
 .review {
