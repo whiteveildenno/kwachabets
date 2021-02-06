@@ -76,10 +76,6 @@
     grid-template-columns:1fr;
   }
 
-  #bookmaker .container .bookie-wrapper .bonus-content .title h1 {
-    font-size: 1.3rem;
-  }
-
   .post {
     flex-direction: column;
     align-items: flex-start;
@@ -112,7 +108,7 @@
   }
 
   #bookmaker .container .bookie-wrapper .bonus-content .title h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .post {
