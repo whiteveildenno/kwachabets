@@ -488,7 +488,7 @@ a.top-scroll {
   display: none;
 }
 a.top-scroll:hover {
-  opacity: .5;
+  opacity: 1;
 }
 
 
