@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} | Today's Football Betting tips {% endblock %}
+
+{% block content %}
+
+
+<!-- Showcase Section -->
+<section id="showcase">
+  <div class="showcase-items">
+    <div class="sports-img">
+      <img class="ball" src="{% static 'img/number1.png' %}" alt="">
+    </div>
+    <div class="caption">
+      <h1>Bigger Rewards</h1>
+      <div class="headerline"></div>
+      <H3>Welcome to the Worlds largest free bet<br>marketplace. We offer a wide selection of<br>professionally
+        analyzed betting tips.</H3>
+      <a class="btn-large" href="#telegram"><span><i class="fab fa-telegram"></i></span> Join KwachaBets</a>
+      <div class="icons">
+        <i class="fas fa-trophy"></i>
+        <i class="fas fa-award"></i>
+        <i class="fas fa-medal"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Todays Tips Section -->
+<section id="tips" class="py-5">
+  <div class="container">
+    <div class="tips-wrapper py-2">
+      {% if affiliates %}
+      {% for Affiliate in affiliates %}
+      <aside class="left-add">
+        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
+      </aside>
+      {% endfor %}
+      {% else %}
+      <aside class="left-add">
+        
+      </aside>
+      {% endif %}
+      <div class="main-content mx-2">
+        <div class="title">
+          <h2 class="p-0"><span><i class="fab fa-gripfire"></i></span> Tips Today <span class="small">(Odds format is
+              in decimal points)</span></h2>
+        </div>
+        <div class="article-wrapper">
+          {% if tips %}
+          {% for Tip in tips %}
+          <article class="post">
+            <div class="top">
+              <h6 class="league"><span>{{ Tip.country_name }} | {{ Tip.competition_name }}</span></h6>
+              <span>{{ Tip.date_of_match}}</span>
+            </div>
+            <hr>
+            <div class="middle">
+              <span>{{ Tip.kick_off_time }}</span>
+              <span><span>{{ Tip.home_team }}</span> Vs <span>{{ Tip.away_team }}</span></span>
+              <span>{{ Tip.prediction }}</span>
+            </div>
+            <div class="bottom">
+              <span>Odds</span>
+              <span> {{Tip.match_odds}}</span>
+              <a href="{{ Tip.betslip_link }}"><img class="bookman" src="{{ Tip.logo.url }}"
+                  alt="{{Tip.image_seo}}"></a>
+            </div>
+          </article>
+          {% endfor %}
+          {% else %}
+          <div class="post">
+            <p>No Tips Available. Please check back later or refresh the page <br> Thankyou for your patience</p>
+          </div>
+          {% endif %}
+        </div>
+        <div class="row py-2">
+          <div class="col-md-12">
+            {% if tips.has_other_pages %}
+            <ul class="pagination">
+              {% if tips.has_previous %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{tips.previous_page_number}}">&laquo;</a>
+              </li>
+              {% else %}
+              <li class="page-item disabled">
+                <a class="page-link">&laquo;</a>
+              </li>
+              {% endif %}
+              {% for i in tips.paginator.page_range %}
+              {% if tips.number == i%}
+              <li class="page-item active">
+                <a class="page-link">{{i}}</a>
+              </li>
+              {% else %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{i}}">{{i}}</a>
+              </li>
+              {% endif %}
+              {% endfor %}
+
+              {% if tips.has_next %}
+              <li class="page-item">
+                <a class="page-link" href="?page={{tips.next_page_number}}">&raquo;</a>
+              </li>
+              {% else %}
+              <li class="page-item disabled">
+                <a class="page-link">&raquo;</a>
+              </li>
+              {% endif %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+        <div class="main-ad">
+          {% if affiliates %}
+          {% for Affiliate in affiliates %}
+          <img src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}">
+          {% endfor %}
+          {% else %}
+          <img src="#" alt="">
+          {% endif %}
+        </div>
+      </div>
+      {% if affiliates %}
+      {% for Affiliate in affiliates %}
+      <aside class="right-add">
+        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
+      </aside>
+      {% endfor %}
+      {% else %}
+      <aside class="left-add">
+        
+      </aside>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!--start why us section -->
+<section id="why-us" class="py-5">
+  <div class="container">
+    <div class="title">
+      <h2>Why us?</h2>
+      <div class="headerline"></div>
+    </div>
+    <div class="card-wrapper my-5">
+      <div class="carded">
+        <h6 class="step">01.</h6>
+        <h4 class="desc">Analyze</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
+      </div>
+      <div class="carded">
+        <h6 class="step">02.</h6>
+        <h4 class="desc">Predict</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
+      </div>
+      <div class="carded">
+        <h6 class="step">03.</h6>
+        <h4 class="desc">Win</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a?</p>
+      </div>
+    </div>
+    <div class="notification">
+      <p>
+        KwachaBets is a free betting tip marketplace. We have a number of analyzed football bets aimed to help punters
+        make best gambling choices. I'd like to clarify, we do not deal in Fixed or Sure bet matches. Our selections
+        are
+        just professionally analyzed and thus we advocate for responsible gambling. Our goal is to be transparent as
+        possible (Note: We do not edit our selections after match losses, We keep records of all our previous matches
+        for user reviews).<br><br> Gambling should be fun, let us help you enjoy it.
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(90deg, rgba(234,240,249,1) 0%, rgba(234,240,250,1) 14%, rgba(233,240,249,1) 26%, rgba(233,239,249,1) 40%, rgba(232,239,249,1) 49%, rgba(230,238,249,1) 58%, rgba(227,235,248,1) 69%, rgba(226,235,248,1) 79%, rgba(224,233,247,1) 88%, rgba(222,232,247,1) 100%);
+}
+
+
+#header {
+  background: #061244;
+  color: white;
+}
+
+#header a:link, #header a:visited {
+  color: #66FCED;
+}
+
+.module h2, .module caption, .inline-group h2 {
+  background: #061244;
+}
+
+a:link, a:visited {
+    color: #061244;
+    text-decoration: none;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+  background: #061244;
+  color: #66FCED;
+}
+
+.button.default, input[type=submit].default, .submit-row input.default {
+  background: #66FCED;
+  color: #061244;
+}
+
+#content-related {
+  background: #061244;
+}
+
+#content-related .module h2,
+#content-related .module h3 {
+  color: white;
+}
+
+.addlink a {
+  color: #66FCED;
+}
+
+div.breadcrumbs {
+  background: #061244;
+}
+
+div.breadcrumbs a {
+  color: #66FCED;
+}
+
+.toggle-nav-sidebar {
+  background: linear-gradient(90deg, rgba(234,240,249,1) 0%, rgba(234,240,250,1) 14%, rgba(233,240,249,1) 26%, rgba(233,239,249,1) 40%, rgba(232,239,249,1) 49%, rgba(230,238,249,1) 58%, rgba(227,235,248,1) 69%, rgba(226,235,248,1) 79%, rgba(224,233,247,1) 88%, rgba(222,232,247,1) 100%);
+}

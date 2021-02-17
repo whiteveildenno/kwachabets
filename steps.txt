@@ -1,0 +1,38 @@
+Steps to using django framework
+  1. creating the virtual environment Command: python -m venv <name of virtual environment>
+  2. start the virtual environment command: ./<name of virtaul environment>/Scripts/Activate.ps1
+  3. select the interpreter to use shortcut (shift + cntrl + p then select interpreter).
+  4. install django inthe virtual environment command pip install django
+  5. confirm its installed command pip freeze
+  6. create your project command django-admin startproject <name of the project> .
+  7. create a .gitignore file.
+  8. run django server command python manage.py runserver
+  9. create your first app command python manage.py startapp <name of app>
+  10. Add your app.config file to the settings.py file
+  11. install autopep8 it is a formatter
+  12. create a urls.py file inthe <name of app> folder
+  13. create an index member inside the views.py
+  14. go to the main urls.py file and create the path command path('', include('pages.urls')), Linking  
+      to the other pages .urls file 
+  15.  create a templates file for it to be served. Before that in settings file instruct django where     to   look for the template files.... this is under the template section command DIR: [os.path.join(BASE_DIR, 'template')]. 
+
+  16.  add the html files to the template files. and declare them inthe <app name> urls.py 
+  17. extend a base.html inthe template file that will hold all the header footer and script tag used in html file.(boilerplate files)
+
+  18.  inthe respective .html files extend the base layout through command {% extends 'base.html' %} {% block content %} {% endblock %}
+
+  19. implementing your theme (static files). inside the <your project folder> create a new folder and call it static this is where all the static files are put. (css, js & mediafiles)
+  20. go the setting file and define the static files the command STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+      STATICFILES_DIRS = [os.path.join(BASE_DIR, '<my project folder>/static')]
+
+  21. run a command that collects all the static files inthe project command = python manage.py collectstatic
+
+  22. inthe base html import the static helper command {% load static %}
+  23.  in all the href links them to the static folder {% static 'css/all.css' %}
+  24. Add partials folder inthe templates folder this are html files that contain segements of the main base html (e.g nav partial, footer partial)
+
+  25. bring inthe partial files to the base hml through command {% include 'partial/_filename %}
+  26 copy the real html content and add it to the pages folder inside templates
+  27. Linking between pages we use {% url 'index' %}
+  28. install postgres command pip install psycopg2 then repeat that with a -binary
+  29. change db settings inside the settings.py

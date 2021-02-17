@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(90deg, rgba(234,240,249,1) 0%, rgba(234,240,250,1) 14%, rgba(233,240,249,1) 26%, rgba(233,239,249,1) 40%, rgba(232,239,249,1) 49%, rgba(230,238,249,1) 58%, rgba(227,235,248,1) 69%, rgba(226,235,248,1) 79%, rgba(224,233,247,1) 88%, rgba(222,232,247,1) 100%);
+}
+
+.form-wrap {
+  background-color:white;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.form-wrap form {
+  padding: 10px 20px;
+}
+
+.heading1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.form-wrap h3 {
+  font-size: 13px;
+  text-align: center;
+}
+
+.input {
+  margin-top: 15px;
+}
+
+.form-control {
+  border-radius: 0;
+  color: #061244!important;
+  font-size: .8rem;
+}
+
+.form-control:focus {
+  border: .1rem solid #66FCED;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #66FCED!important;
+}
+
+
+.input label {
+  color: #98969C;
+  font-size: 13px;
+}
+
+.btn {
+  border-width: medium;
+  border-radius: 5px;
+  color: var(--linear-footer-gradient);
+  background: var(--link-color);
+  padding: .2rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block!important;
+  transition: color 3ms ease-in;
+}
+
+.btn:hover {
+  background:  #B2F6FD;
+  color: #061244;
+  text-decoration: none;
+}
+
+.paragraph {
+  font-size: 13px;
+  text-align: center;
+}
+
+.paragraph a {
+  text-decoration: none;
+}

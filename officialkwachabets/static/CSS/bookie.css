@@ -1,0 +1,146 @@
+#bookmaker {
+  background: var(--linear-gradient);
+}
+
+#bookmaker .container .bookie-wrapper {
+  display: grid;
+  grid-template-columns: 120px 1fr 120px;
+  justify-content: center;
+}
+#bookmaker .container .bookie-wrapper .main-ad img {
+  display: block;
+  width: 100%;
+}
+#bookmaker .container .bookie-wrapper .bonus-content .title {
+  border-radius: .4rem;
+  border: 1px solid #061244 ;
+  padding: 1rem .2rem;
+}
+
+#bookmaker .container .bookie-wrapper .bonus-content .title h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-left: .5rem;
+}
+
+#bookmaker .container .bookie-wrapper .bonus-content .article-wrapper .post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+  background: var(--linear-footer-gradient);
+  border-radius:  .3rem;
+  color: var(--light-color);
+}
+
+
+.bookie-logo img {
+  width:95px;
+  margin-bottom: .4rem;
+}
+
+.bookie-name .fas {
+  color: var(--light-color);
+  margin-bottom: .4rem;
+}
+
+#bookmaker .container .bookie-wrapper .bonus-content .article-wrapper .post .review {
+  margin: 1rem;
+}
+
+.sub-title h2 {
+  color: var(--link-color);
+  font-size: 1.5rem;
+}
+
+.content p {
+  font-size: .8rem;
+}
+
+.claim-bonus a {
+  display: block;
+  padding: .2rem 4rem;
+  text-decoration: none;
+  color: #061244; 
+}
+
+.claim-bonus a:hover {
+  color: #061244;
+}
+
+
+/* ---------------------------- Media queries ------------- */
+
+@media(max-width:992px) and (min-width:640px) {
+  #bookmaker .container .bookie-wrapper {
+    grid-template-columns:1fr;
+  }
+
+  #bookmaker .container .bookie-wrapper .bonus-content .article-wrapper .post {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:1rem 0;
+  }
+
+  #bookmaker .container .bookie-wrapper .left-add,
+  #bookmaker .container .bookie-wrapper .right-add{
+    display: none;
+  }
+
+  #bookmaker .container .bookie-wrapper .bonus-content .article-wrapper .post .review {
+    margin: 0;
+  }
+
+  .bookie-name .fas {
+    margin-bottom: 1rem;
+  }
+
+  .claim-bonus a {
+    padding: 1rem 4rem;
+  }
+  
+}
+
+@media(max-width:639px){
+  #bookmaker .container .bookie-wrapper {
+    grid-template-columns:1fr;
+  }
+
+  #bookmaker .container .bookie-wrapper .bonus-content .title h1 {
+    font-size: 1.5rem;
+  }
+
+  #bookmaker .container .bookie-wrapper .bonus-content .article-wrapper .post {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:1rem 0;
+  }
+
+  #bookmaker .container .bookie-wrapper .left-add,
+  #bookmaker .container .bookie-wrapper .right-add{
+    display: none;
+  }
+
+  #bookmaker .container .bookie-wrapper .bonus-content .article-wrapper .post .review {
+    margin: 0;
+  }
+
+  .bookie-name .fas {
+    margin-bottom: 1rem;
+  }
+
+  .claim-bonus a {
+    padding: 1rem 4rem;
+  }
+  
+}
+
+
+
+
+
+
+

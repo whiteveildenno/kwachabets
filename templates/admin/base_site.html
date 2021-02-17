@@ -1,0 +1,14 @@
+{% extends 'admin/base.html'%}
+
+{%load static%}
+
+{% block branding %}
+  <h1 id = "head">
+    <img class="logo" src="{% static 'img/Kwachalogo.png' %}" alt="Kwacha Bets" width = "130">
+  </h1>
+{% endblock %}
+
+
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'CSS/admin.css' %}">
+{% endblock %}

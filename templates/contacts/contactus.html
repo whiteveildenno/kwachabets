@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<!-- Contact form section -->
+
+<div id="contact-us">
+  <div class="container">
+    <!-- Alerts -->
+    {% include 'partials/_alerts.html' %}
+    <div class="form-wrap">
+      <form action="" method="post">
+        {%csrf_token%}
+        <h1 class="heading1">Get In Touch</h1>
+        <div>
+          <div class="input">
+            <label for="company_name">Company Name</label><br>
+            <input type="text" name="company_name" id="company_name" class="form-control" placeholder="Kwacha Bets"
+              required>
+          </div>
+          <div class="input">
+            <label for="email_address">Email Address</label><br>
+            <input type="email" name="email_address" id="email_address" class="form-control"
+              placeholder="me@example.com" required>
+          </div>
+          <div class="input">
+            <label for="message">Message</label><br>
+            <textarea id="messager" name="messager" class="form-control" placeholder="Add your message."
+              rows="4"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn my-3">Send Message</button>
+          </div>
+          <div>
+            <p class="paragraph">By clicking the Send message button you agree
+              to our <br> <a href="terms.html">Terms and conditions</a> and <a href="privacy.html">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

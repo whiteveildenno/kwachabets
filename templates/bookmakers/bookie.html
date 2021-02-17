@@ -1,0 +1,83 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block title %} | Bookmaker Reviews {% endblock %}
+{% block content %}
+<!-- Bonuses Section -->
+<div id="bookmaker">
+  <div class="container">
+    <div class="bookie-wrapper py-2">
+      {% if affiliates %}
+      {% for Affiliate in affiliates %}
+      <aside class="left-add">
+        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
+      </aside>
+      {% endfor %}
+      {% else %}
+      <aside class="left-add">
+      
+      </aside>
+      {% endif %}
+      <div class="bonus-content mx-2">
+        <div class="title">
+          <h1 class="p-0">Reviews & Bonuses</h1>
+        </div>
+        <div class="article-wrapper">
+          {% if bookmakers %}
+            {% for Bookmaker in bookmakers %}
+            <article class="post ">
+              <div class="bookie-brand">
+                <div class="bookie-logo">
+                  <img src="{{Bookmaker.logo.url}}" alt="{{Bookmaker.image_seo}}">
+                </div>
+                <div class="bookie-name">
+                  <i class="fas fa-award"></i>
+                  <i class="fas fa-award"></i>
+                  <i class="fas fa-award"></i>
+                  <i class="fas fa-award"></i>
+                  <i class="fas fa-award"></i>
+                </div>
+              </div>
+              <div class="review">
+                <div class="sub-title">
+                  <h2>{{Bookmaker.review_title}}</h2>
+                </div>
+                <div class="content">
+                  <p>{{Bookmaker.review_description}}</p>
+                </div>
+              </div>
+              <div class="claim-bonus">
+                <a class="btn-large" href="{{Bookmaker.bonus_link}}}">Claim Bonus</a>
+              </div>
+            </article>
+            {% endfor %}
+          {%else%}
+            <article class="post">
+              <p>Sorry no reviews at the moment</p>
+            </article>
+          {% endif %}          
+        </div>
+        <div class="main-ad">
+          {% if affiliates %}
+          {% for Affiliate in affiliates %}
+          <img src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}">
+          {% endfor %}
+          {% else %}
+          <img src="#" alt="">
+          {% endif %}
+        </div>
+      </div>
+      {% if affiliates %}
+      {% for Affiliate in affiliates %}
+      <aside class="right-add">
+        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
+      </aside>
+      {% endfor %}
+      {% else %}
+      <aside class="left-add">
+        
+      </aside>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

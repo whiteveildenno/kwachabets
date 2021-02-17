@@ -1,0 +1,42 @@
+{% load static %}
+<!-- Main footer -->
+<footer id="main-footer" class="py-5">
+  <div class="container">
+    <div class="footer-items">
+      <div class="follow-us">
+        <img class="footer-img" src="{% static 'img/Kwachalogo.png' %}" alt="KwachaBets">
+        <p class="my-3">You must be 18+ years old to use this website. Please bet responsibly.</p>
+        <div>
+          <img class="footer-aware my-1 mx-1" src="{% static 'img/play-responsibly.png' %}" alt="bet responsibly">
+          <img class="footer-aware" src="{% static 'img/Gambleaware-Logo-UK.jpg' %}" alt="begambleaware">
+        </div>
+      </div>
+      <div class="about-us">
+        <h4>About Us</h4>
+        <a href="https://www.begambleaware.org/" target="_blank" rel="noopener">Responsible Gambling</a>
+        <a href="{% url 'contacts'%}">Advertise With Us</a>
+        <a href="{% url 'terms' %}">Terms & Conditions</a>
+        <a href="{% url 'privacy' %}">Privacy Policy</a>
+      </div>
+      <div class="footer-ad">
+        {% if affiliates %}
+          {% for Affiliate in affiliates %}
+          <img class="footer-img-ad" src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}">
+          {% endfor %}
+          {% else %}
+          <img src="#" alt="">
+          {% endif %}
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div>
+    <p class="copyright">Copyright &copy; 2021. KwachaBets. All Rights Reserved</p>
+  </div>
+</footer>
+
+<!--- Top Scroll -->
+<a href="#" class="top-scroll">
+  <i class="fas fa-angle-up"></i>
+</a>
+<!--- End of Top Scroll -->
