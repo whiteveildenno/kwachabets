@@ -9,20 +9,21 @@
       {% if affiliates %}
       {% for Affiliate in affiliates %}
       <aside class="left-add">
-        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
-      </aside>
-      {% endfor %}
-      {% else %}
-      <aside class="left-add">
-      
-      </aside>
-      {% endif %}
-      <div class="bonus-content mx-2">
-        <div class="title">
-          <h1 class="p-0">Reviews & Bonuses</h1>
-        </div>
-        <div class="article-wrapper">
-          {% if bookmakers %}
+        <a href="{{Affiliate.affiliate_link}}"><img src="{{Affiliate.side_banner.url}}"
+            alt="{{Affiliate.image_seo}}"></a>
+        </aside>
+        {% endfor %}
+        {% else %}
+        <aside class="left-add">
+
+        </aside>
+        {% endif %}
+        <div class="bonus-content mx-2">
+          <div class="title">
+            <h1 class="p-0">Reviews & Bonuses</h1>
+          </div>
+          <div class="article-wrapper">
+            {% if bookmakers %}
             {% for Bookmaker in bookmakers %}
             <article class="post ">
               <div class="bookie-brand">
@@ -50,33 +51,35 @@
               </div>
             </article>
             {% endfor %}
-          {%else%}
+            {%else%}
             <article class="post">
               <p>Sorry no reviews at the moment</p>
             </article>
-          {% endif %}          
+            {% endif %}
+          </div>
+          <div class="main-ad">
+            {% if affiliates %}
+            {% for Affiliate in affiliates %}
+            <a href="{{Affiliate.affiliate_link}}"><img src="{{Affiliate.main_banner.url}}"
+                alt="{{Affiliate.image_seo}}"></a>
+            {% endfor %}
+            {% else %}
+            <img src="#" alt="">
+            {% endif %}
+          </div>
         </div>
-        <div class="main-ad">
-          {% if affiliates %}
-          {% for Affiliate in affiliates %}
-          <img src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}">
-          {% endfor %}
-          {% else %}
-          <img src="#" alt="">
-          {% endif %}
-        </div>
-      </div>
-      {% if affiliates %}
-      {% for Affiliate in affiliates %}
-      <aside class="right-add">
-        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
-      </aside>
-      {% endfor %}
-      {% else %}
-      <aside class="left-add">
-        
-      </aside>
-      {% endif %}
+        {% if affiliates %}
+        {% for Affiliate in affiliates %}
+        <aside class="right-add">
+          <a href="{{Affiliate.affiliate_link}}"><img src="{{Affiliate.side_banner.url}}"
+              alt="{{Affiliate.image_seo}}"></a>
+        </aside>
+        {% endfor %}
+        {% else %}
+        <aside class="left-add">
+
+        </aside>
+        {% endif %}
     </div>
   </div>
 </div>

@@ -21,7 +21,7 @@
       <div class="footer-ad">
         {% if affiliates %}
           {% for Affiliate in affiliates %}
-          <img class="footer-img-ad" src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}">
+          <a href = "{{Affiliate.affiliate_link}}"><img class="footer-img-ad" src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
           {% endfor %}
           {% else %}
           <img src="#" alt="">
