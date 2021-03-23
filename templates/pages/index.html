@@ -34,7 +34,7 @@
       {% if affiliates %}
       {% for Affiliate in affiliates %}
       <aside class="left-add">
-        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
+        <a href = "{{Affiliate.affiliate_link}}"><img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
       </aside>
       {% endfor %}
       {% else %}
@@ -116,7 +116,7 @@
         <div class="main-ad">
           {% if affiliates %}
           {% for Affiliate in affiliates %}
-          <img src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}">
+          <a href="{{Affiliate.affiliate_link}}"><img src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
           {% endfor %}
           {% else %}
           <img src="#" alt="">
@@ -126,7 +126,7 @@
       {% if affiliates %}
       {% for Affiliate in affiliates %}
       <aside class="right-add">
-        <img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}">
+        <a href="{{Affiliate.affiliate_link}}"><img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
       </aside>
       {% endfor %}
       {% else %}
