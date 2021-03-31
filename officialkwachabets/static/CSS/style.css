@@ -356,6 +356,13 @@ summary {
   margin-bottom: .7rem;
 }
 
+#tips .container .tips-wrapper .main-content .article-wrapper .post .bottom a {
+  background: var(--dark-color);
+  padding: .5rem;
+  border-radius: 5px;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+}
+
 #tips .container .tips-wrapper .main-content .article-wrapper .post .accordion {
   display: flex;
   justify-content: space-between;
@@ -1091,6 +1098,7 @@ a.top-scroll:hover {
     color: #061244;
     font-weight: 500;
   }
+
 
   #why-us .container .title h2{
     font-size: 1.4rem;
