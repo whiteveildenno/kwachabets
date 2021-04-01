@@ -17,7 +17,8 @@
       <div class="headerline"></div>
       <H3>Welcome to the Worlds largest free bet<br>marketplace. We offer a wide selection of<br>professionally
         analyzed betting tips.</H3>
-      <a class="btn-large" href="https://t.me/joinchat/WDuDTRR6M_ldvN7h"><span><i class="fab fa-telegram"></i></span> Join KwachaBetz</a>
+      <a class="btn-large" href="https://t.me/joinchat/WDuDTRR6M_ldvN7h"><span><i class="fab fa-telegram"></i></span>
+        Join KwachaBetz</a>
       <div class="icons">
         <i class="fas fa-trophy"></i>
         <i class="fas fa-award"></i>
@@ -34,12 +35,18 @@
       {% if affiliates %}
       {% for Affiliate in affiliates %}
       <aside class="left-add">
-        <a href = "{{Affiliate.affiliate_link}}"><img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Vertical Ads -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2806203102997010"
+          data-ad-slot="8937002151" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </aside>
       {% endfor %}
       {% else %}
       <aside class="left-add">
-        
+
       </aside>
       {% endif %}
       <div class="main-content mx-2">
@@ -47,6 +54,13 @@
           <h2 class="p-0"><span><i class="fab fa-gripfire"></i></span> Tips Today <span class="small">(Odds format is
               in decimal points)</span></h2>
         </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Horizontal Ad Unit -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2806203102997010"
+          data-ad-slot="5077648197" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         <div class="article-wrapper">
           {% if tips %}
           {% for Tip in tips %}
@@ -114,24 +128,30 @@
           </div>
         </div>
         <div class="main-ad">
-          {% if affiliates %}
-          {% for Affiliate in affiliates %}
-          <a href="{{Affiliate.affiliate_link}}"><img src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
-          {% endfor %}
-          {% else %}
-          <img src="#" alt="">
-          {% endif %}
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Horizontal Ad Unit -->
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2806203102997010"
+            data-ad-slot="5077648197" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
         </div>
       </div>
       {% if affiliates %}
       {% for Affiliate in affiliates %}
       <aside class="right-add">
-        <a href="{{Affiliate.affiliate_link}}"><img src="{{Affiliate.side_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Vertical Ads -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2806203102997010"
+          data-ad-slot="8937002151" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </aside>
       {% endfor %}
       {% else %}
       <aside class="left-add">
-        
+
       </aside>
       {% endif %}
     </div>

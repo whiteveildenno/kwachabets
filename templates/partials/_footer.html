@@ -19,13 +19,13 @@
         <a href="{% url 'privacy' %}">Privacy Policy</a>
       </div>
       <div class="footer-ad">
-        {% if affiliates %}
-          {% for Affiliate in affiliates %}
-          <a href = "{{Affiliate.affiliate_link}}"><img class="footer-img-ad" src="{{Affiliate.main_banner.url}}" alt="{{Affiliate.image_seo}}"></a>
-          {% endfor %}
-          {% else %}
-          <img src="#" alt="">
-          {% endif %}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Horizontal Ad Unit -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2806203102997010"
+          data-ad-slot="5077648197" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
     </div>
   </div>
