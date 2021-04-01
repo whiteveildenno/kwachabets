@@ -363,10 +363,9 @@ summary {
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
 }
 
-#tips .container .tips-wrapper .main-content .article-wrapper .post .accordion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#tips .container .tips-wrapper .main-content .article-wrapper .post .infeedad {
+  margin-top: .7rem;
+  margin-bottom: .7rem;
 }
 
 #tips .container .tips-wrapper .main-content .main-ad {
