@@ -103,6 +103,23 @@ hr {
   width: 55px;
 }
 
+.place-bet {
+  border-width: medium;
+  border-radius: 5px;
+  color: white;
+  background: var(--linear-footer-gradient);
+  padding: .5rem 1rem;
+  font-size: .8rem;
+  font-weight: 700;
+  display: inline-block!important;
+  transition: color 3ms ease-in;
+}
+
+.place-bet:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .ball {
   width: 550px;
 }
@@ -253,7 +270,7 @@ summary {
   width: 50vw;
 }
 
-#showcase .showcase-items .caption h1{
+#showcase .showcase-items .caption h2{
   color: var(--light-color);  
   font-size: 2.9rem;
   text-transform: uppercase;
@@ -536,7 +553,7 @@ a.top-scroll:hover {
     font-size: 2rem;  
   }
 
-  #showcase .showcase-items .caption h1{
+  #showcase .showcase-items .caption h2{
     font-size: 4.5rem;
   }
 
@@ -659,7 +676,7 @@ a.top-scroll:hover {
     width: 100vw;
   }
 
-  #showcase .showcase-items .caption h1{ 
+  #showcase .showcase-items .caption h2{ 
     font-size: 1.7rem;
   }
 
@@ -826,7 +843,7 @@ a.top-scroll:hover {
     width: 100vw;
   }
 
-  #showcase .showcase-items .caption h1{ 
+  #showcase .showcase-items .caption h2{ 
     font-size: 1.4rem;
   }
 
@@ -1032,7 +1049,7 @@ a.top-scroll:hover {
     width: 100vw;
   }
 
-  #showcase .showcase-items .caption h1{ 
+  #showcase .showcase-items .caption h2{ 
     font-size: 1.4rem;
   }
 

@@ -13,11 +13,11 @@
       <img class="ball" src="{% static 'img/number1.png' %}" alt="">
     </div>
     <div class="caption">
-      <h1>Bigger Rewards</h1>
+      <h2>Bigger Rewards</h2>
       <div class="headerline"></div>
       <H3>Welcome to the Worlds largest free bet<br>marketplace. We offer a wide selection of<br>professionally
         analyzed betting tips.</H3>
-      <a class="btn-large" href="https://t.me/joinchat/WDuDTRR6M_ldvN7h"><span><i class="fab fa-telegram"></i></span>
+      <a class="btn-large" href="https://www.facebook.com/kwacha.betz/"><span><i class="fab fa-facebook"></i></span>
         Join KwachaBetz</a>
       <div class="icons">
         <i class="fas fa-trophy"></i>
@@ -51,8 +51,8 @@
       {% endif %}
       <div class="main-content mx-2">
         <div class="title">
-          <h2 class="p-0"><span><i class="fab fa-gripfire"></i></span> Tips Today <span class="small">(Odds format is
-              in decimal points)</span></h2>
+          <h1 class="p-0"> Football Tips Today <span class="small">(Odds format is
+              in decimal points)</span></h1>
         </div>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- Horizontal Ad Unit -->
@@ -66,20 +66,19 @@
           {% for Tip in tips %}
           <article class="post">
             <div class="top">
-              <h6 class="league"><span>{{ Tip.country_name }} | {{ Tip.competition_name }}</span></h6>
-              <span>{{ Tip.date_of_match}}</span>
+              <h2 class="league"><span>{{ Tip.country_name }} | {{ Tip.competition_name }}</span></h2>
+              <h2><span>{{ Tip.date_of_match}}</span></h2>
             </div>
             <hr>
             <div class="middle">
               <span>{{ Tip.kick_off_time }}</span>
-              <span><span>{{ Tip.home_team }}</span> Vs <span>{{ Tip.away_team }}</span></span>
-              <span>{{ Tip.prediction }}</span>
+              <h2><span>{{ Tip.home_team }}</span> <span>Vs</span> <span>{{ Tip.away_team }}</span></h2>
+              <H2><span>{{ Tip.prediction }}</span></H2>
             </div>
             <div class="bottom">
               <span>Odds</span>
               <span> {{Tip.match_odds}}</span>
-              <a href="{{ Tip.betslip_link }}"><img class="bookman" src="{{ Tip.logo.url }}"
-                  alt="{{Tip.image_seo}}"></a>
+              <a class="place-bet" href="{{ Tip.betslip_link }}"> Place Bet</a>
             </div>
             <div class="infeedad">
               <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
